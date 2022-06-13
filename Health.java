@@ -167,5 +167,3 @@ public class Health extends JFrame
 	}
 
 }
-
-//This is the end of our project health file xDDD......
