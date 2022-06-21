@@ -178,7 +178,7 @@ public class MyActionListener1 implements ActionListener
 			this.mf2.setVisible(true);
 			this.mf2_1.setVisible(false);
 		}
-		if(e.getActionCommand().equals("Save"))
+		if(e.getActionCommand().equals("Save          "))
 		{
 			String member_name = this.mf2.txt1.getText();
 			String dob = this.mf2.txt3.getText();
@@ -211,7 +211,7 @@ public class MyActionListener1 implements ActionListener
 			
 		}
 		
-		if(e.getActionCommand().equals("Clear"))
+		if(e.getActionCommand().equals("Clear          "))
 		{
 			this.mf2.txt1.setText("");
 			this.mf2.txt3.setText("");
@@ -247,7 +247,7 @@ public class MyActionListener1 implements ActionListener
 			this.mf3.setVisible(true);
 			this.mf3_1.setVisible(false);
 		}
-		if(e.getActionCommand().equals("Save"))
+		if(e.getActionCommand().equals("Save           "))
 		{
 			String member_name = this.mf3.txt1.getText();
 			String dob = this.mf3.txt3.getText();
@@ -280,7 +280,7 @@ public class MyActionListener1 implements ActionListener
 			
 		}
 		
-		if(e.getActionCommand().equals("Clear"))
+		if(e.getActionCommand().equals("Clear           "))
 		{
 			this.mf3.txt1.setText("");
 			this.mf3.txt3.setText("");
@@ -316,7 +316,7 @@ public class MyActionListener1 implements ActionListener
 			this.mf4.setVisible(true);
 			this.mf4_1.setVisible(false);
 		}
-		if(e.getActionCommand().equals("Save"))
+		if(e.getActionCommand().equals("Save            "))
 		{
 			String member_name = this.mf4.txt1.getText();
 			String dob = this.mf4.txt3.getText();
@@ -349,7 +349,7 @@ public class MyActionListener1 implements ActionListener
 			
 		}
 		
-		if(e.getActionCommand().equals("Clear"))
+		if(e.getActionCommand().equals("Clear            "))
 		{
 			this.mf2.txt1.setText("");
 			this.mf2.txt3.setText("");

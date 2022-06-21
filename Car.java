@@ -41,8 +41,8 @@ public class Car extends JFrame
 		dob =new JLabel("DOB");
 		phoneno =new JLabel("Phone No");
 
-		save =new JButton("Save");
-		clear =new JButton("Clear");
+		save =new JButton("Save           ");
+		clear =new JButton("Clear           ");
 		back =new JButton("< Back");
 
 		String[] choice = {"Select","Male", "Female", "Others", "Prefer to not Say"};
