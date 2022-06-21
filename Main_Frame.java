@@ -17,8 +17,8 @@ public class Main_Frame extends JFrame
 	
 	Font f1,f2,f3;
 	
-	MyActionListener1 lst = new MyActionListener1(this);
-	
+	MyActionListener1 ml = new MyActionListener1(this);
+
 	Main_Frame()
 	{
 		super("INSURANCE MANAGEMENT");
@@ -40,7 +40,7 @@ public class Main_Frame extends JFrame
 		add(lbl);
 		add(str);
 		
-		str.addActionListener(lst);
+		str.addActionListener(ml);
 		
 		addWindowListener(new WindowAdapter()
 			{

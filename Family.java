@@ -4,9 +4,9 @@ import java.io.*;
 import javax.swing.*;
 import java.lang.*;
 
-public class Home extends JFrame
-{											// label 1,2,3,4,5,6 are in text and lbl 7 is bgimage lbl8 is bottom line in health frame		
-	JLabel member_name,gender,dob,phoneno,age,home_insurance,lbl7;
+public class Family extends JFrame
+{											// label 1,2,3,4,5,6 are in text and lbl 7 is bgimage lbl8 is bottom line in Family frame		
+	JLabel member_name,gender,dob,phoneno,age,family_insurance,lbl7;
 
 	JTextField txt1,txt2,txt3,txt4,txt5;
 	
@@ -18,7 +18,7 @@ public class Home extends JFrame
 
 	MyActionListener1 ml = new MyActionListener1(this);
 
-	Home()
+	Family()
 	{
 		setLayout(null);
 		setBounds(0,0,550,965);
@@ -35,7 +35,7 @@ public class Home extends JFrame
 		lbl7.setVisible(true);
 		 
 		age = new JLabel("Age");
-		home_insurance = new JLabel("Home Insurance");
+		family_insurance = new JLabel("Family Insurance");
 		member_name =new JLabel("Member Name");
 		gender =new JLabel("Gender");
 		dob =new JLabel("DOB");
@@ -43,7 +43,7 @@ public class Home extends JFrame
 
 		save =new JButton("Save");
 		clear =new JButton("Clear");
-		back =new JButton("<-");
+		back =new JButton("< back");
 
 		String[] choice = {"Select","Male", "Female", "Others", "Prefer to not Say"};
 		cmb1 = new JComboBox(choice);
@@ -51,7 +51,7 @@ public class Home extends JFrame
 		Font f1 = new Font("Times New Roman",Font.BOLD,20);	
 		Font f2 = new Font("Arial",Font.ITALIC,30);	
 	
-		home_insurance.setFont(f1);
+		family_insurance.setFont(f1);
 		member_name.setFont(f1);
 		gender.setFont(f1);
 		dob.setFont(f1);
@@ -88,7 +88,7 @@ public class Home extends JFrame
 		
 		add(back);
 		
-		add(home_insurance);
+		add(family_insurance);
 
 		txt1.setBounds(300,150,150,65);
 		cmb1.setBounds(300,250,150,65);
@@ -96,7 +96,7 @@ public class Home extends JFrame
 		txt4.setBounds(300,450,150,65);
 		txt5.setBounds(300,550,150,65);
 
-		home_insurance.setBounds(100,50,350,75);
+		family_insurance.setBounds(100,50,350,75);
 		member_name.setBounds(100,150,150,65);
 		gender.setBounds(100,250,150,65);
 		dob.setBounds(100,350,150,65);

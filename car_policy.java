@@ -5,7 +5,7 @@ import javax.swing.*;
 import javafx.stage.WindowEvent;
 import java.lang.*;
 
-public class home_policy extends JFrame
+public class car_policy extends JFrame
 {
 	JButton plans,back;
 	
@@ -13,7 +13,7 @@ public class home_policy extends JFrame
 
     MyActionListener1 ml = new MyActionListener1(this);
 
-    home_policy()
+    car_policy()
     {
         setLayout(null);
         setBounds(0,0,1600,1000);
@@ -39,8 +39,8 @@ public class home_policy extends JFrame
         lbl15 = new JLabel("nformation must be complete, correct, true and accurate in every respect and forms");
         lbl16 = new JLabel("part of this contract.");
 		
-		plans= new JButton("get plans");
-        back= new JButton("go back");
+		plans= new JButton("Get Plans");
+        back= new JButton("Go Back");
 
         Font f1 = new Font("Arial",Font.ITALIC,25);	
         
