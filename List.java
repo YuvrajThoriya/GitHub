@@ -76,7 +76,7 @@ public class List extends JFrame
 			{
 				public void windowClosing(WindowEvent we)
 				{
-					setVisible(false);
+					System.exit(0);
 				}
 			});
 	}

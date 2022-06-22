@@ -6,7 +6,7 @@ import java.lang.*;
 
 public class Health extends JFrame
 {											// label 1,2,3,4,5,6 are in text and lbl 7 is bgimage lbl8 is bottom line in health frame		
-	JLabel member_name,gender,dob,phoneno,age,health_insurance,lbl7;
+	JLabel member_name,gender,dob,phoneno,age,health_insurance,lbl7,invalid;
 
 	JTextField txt1,txt2,txt3,txt4,txt5;
 	
@@ -40,6 +40,7 @@ public class Health extends JFrame
 		gender =new JLabel("Gender");
 		dob =new JLabel("DOB");
 		phoneno =new JLabel("Phone No");
+		invalid =new JLabel("Invalid");
 
 		save =new JButton("Save");
 		clear =new JButton("Clear");
@@ -49,7 +50,7 @@ public class Health extends JFrame
 		cmb1 = new JComboBox(choice);
 
 		Font f1 = new Font("Times New Roman",Font.BOLD,20);	
-		Font f2 = new Font("Arial",Font.ITALIC,30);	
+		Font f2 = new Font("Arial",Font.ITALIC,30);
 	
 		health_insurance.setFont(f1);
 		member_name.setFont(f1);
@@ -57,7 +58,8 @@ public class Health extends JFrame
 		dob.setFont(f1);
 		age.setFont(f1);
 		phoneno.setFont(f1);
-
+		invalid.setFont(f1);		
+		
 		back.setFont(f1);
 		save.setFont(f1);
 		clear.setFont(f1);
@@ -82,6 +84,7 @@ public class Health extends JFrame
 		add(gender);
 		add(dob);
 		add(phoneno);
+		//add(invalid);
 
 		add(save);
 		add(clear);
@@ -102,6 +105,7 @@ public class Health extends JFrame
 		dob.setBounds(100,350,150,65);
 		age.setBounds(100,450,150,65);
 		phoneno.setBounds(100,550,150,65);
+		invalid.setBounds(300,490,150,65);
 
 		save.setBounds(100,650,150,65);
 		clear.setBounds(300,650,150,65);

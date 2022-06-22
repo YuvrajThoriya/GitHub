@@ -117,7 +117,7 @@ public class home_policy extends JFrame
         {
             public void windowClosing(WindowEvent we)
             {
-                setVisible(false);
+                System.exit(0);
             }
         });
     }

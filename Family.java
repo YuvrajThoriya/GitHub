@@ -6,7 +6,7 @@ import java.lang.*;
 
 public class Family extends JFrame
 {											// label 1,2,3,4,5,6 are in text and lbl 7 is bgimage lbl8 is bottom line in Family frame		
-	JLabel member_name,gender,dob,phoneno,age,family_insurance,lbl7;
+	JLabel member_name,gender,dob,phoneno,age,family_insurance,lbl7,invalid;
 
 	JTextField txt1,txt2,txt3,txt4,txt5;
 	

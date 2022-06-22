@@ -18,7 +18,8 @@ public class MyActionListener1 implements ActionListener
 	car_policy mf3_1;
 	Family mf4;
 	family_policy mf4_1;
-
+	Thanks mf5;
+	
 	MyActionListener1(Main_Frame m)
     {
 		this.mf = m;
@@ -67,6 +68,11 @@ public class MyActionListener1 implements ActionListener
 	MyActionListener1(family_policy m)
 	{
 		this.mf4_1 = m;
+	}
+
+	MyActionListener1(Thanks m)
+	{
+		this.mf5 = m;
 	}
 	
 	public void actionPerformed(ActionEvent e)
@@ -140,7 +146,17 @@ public class MyActionListener1 implements ActionListener
 				System.out.println(efd);
 			}*/
 
+			mf5 = new Thanks();
+			this.mf5.setVisible(true);
+			this.mf1.setVisible(false);
 			
+		}
+
+		if(e.getActionCommand().equals("Ok"))
+		{
+			ls = new List();
+			this.mf5.setVisible(false);
+			this.ls.setVisible(true);
 		}
 		
 		if(e.getActionCommand().equals("Clear"))
@@ -208,8 +224,12 @@ public class MyActionListener1 implements ActionListener
 				System.out.println(efd);
 			}*/
 
-			
+			mf5 = new Thanks();
+			this.mf5.setVisible(true);
+			this.mf2.setVisible(false);
 		}
+		
+		
 		
 		if(e.getActionCommand().equals("Clear          "))
 		{
@@ -277,6 +297,9 @@ public class MyActionListener1 implements ActionListener
 				System.out.println(efd);
 			}*/
 
+			mf5 = new Thanks();
+			this.mf5.setVisible(true);
+			this.mf3.setVisible(false);
 			
 		}
 		
@@ -346,6 +369,9 @@ public class MyActionListener1 implements ActionListener
 				System.out.println(efd);
 			}*/
 
+			mf5 = new Thanks();
+			this.mf5.setVisible(true);
+			this.mf4.setVisible(false);
 			
 		}
 		
