@@ -5,12 +5,14 @@ import javax.swing.*;
 import java.lang.*;
 
 public class Car extends JFrame
-{											// label 1,2,3,4,5,6 are in text and lbl 7 is bgimage lbl8 is bottom line in Car frame		
-	JLabel member_name,gender,dob,phoneno,age,car_insurance,lbl7,invalid;
+{	
+	JLabel lbl2;
 
 	JTextField txt1,txt2,txt3,txt4,txt5;
 	
 	JButton save,clear,back;
+	
+	Font f1,f2;
 
 	JComboBox cmb1;
 
@@ -20,8 +22,9 @@ public class Car extends JFrame
 
 	Car()
 	{
+		super("Get car insurance");
 		setLayout(null);
-		setBounds(0,0,550,965);
+		setExtendedState(getExtendedState() | JFrame.MAXIMIZED_BOTH);
 		
 		txt1=new JTextField();
 		txt2=new JTextField();
@@ -29,41 +32,26 @@ public class Car extends JFrame
 		txt4=new JTextField();
 		txt5=new JTextField();
 
-		img = new ImageIcon("p1.JPG");
-		lbl7 = new JLabel(img);
-		lbl7.setBounds(0,0,img.getIconWidth(), img.getIconHeight());
-		lbl7.setVisible(true);
-		 
-		age = new JLabel("Age");
-		car_insurance = new JLabel("Car Insurance");
-		member_name =new JLabel("Member Name");
-		gender =new JLabel("Gender");
-		dob =new JLabel("DOB");
-		phoneno =new JLabel("Phone No");
+		img = new ImageIcon("Car.png");
+		lbl2 = new JLabel(img);
+		lbl2.setBounds(0,0,img.getIconWidth(), img.getIconHeight());
+		lbl2.setVisible(true);
 
-		save =new JButton("Save           ");
-		clear =new JButton("Clear           ");
-		back =new JButton("< Back");
+		save =new JButton(" SAVE ");
+		clear =new JButton(" CLEAR ");
+		back =new JButton("< CAR POLICY");
 
 		String[] choice = {"Select","Male", "Female", "Others", "Prefer to not Say"};
 		cmb1 = new JComboBox(choice);
 
-		Font f1 = new Font("Times New Roman",Font.BOLD,20);	
-		Font f2 = new Font("Arial",Font.ITALIC,30);	
-	
-		car_insurance.setFont(f1);
-		member_name.setFont(f1);
-		gender.setFont(f1);
-		dob.setFont(f1);
-		age.setFont(f1);
-		phoneno.setFont(f1);
+		f1 = new Font("Segoe UI Black",Font.BOLD,30);
+		f2 = new Font("Segoe UI Black",Font.BOLD,20);
 
-		back.setFont(f1);
+		back.setFont(f2);
 		save.setFont(f1);
 		clear.setFont(f1);
 		cmb1.setFont(f1);
 		
-
 		txt1.setFont(f1);
 		txt2.setFont(f1);
 		txt3.setFont(f1);
@@ -77,35 +65,22 @@ public class Car extends JFrame
 		add(txt5);
 		add(cmb1);
 
-		add(age);
-		add(member_name);
-		add(gender);
-		add(dob);
-		add(phoneno);
-
 		add(save);
 		add(clear);
 		
 		add(back);
 		
-		add(car_insurance);
+		add(lbl2);
 
-		txt1.setBounds(300,150,150,65);
-		cmb1.setBounds(300,250,150,65);
-		txt3.setBounds(300,350,150,65);
-		txt4.setBounds(300,450,150,65);
-		txt5.setBounds(300,550,150,65);
+		txt1.setBounds(700,280,300,100);
+		cmb1.setBounds(700,410,300,100);
+		txt3.setBounds(700,540,300,100);
+		txt4.setBounds(700,670,300,100);
+		txt5.setBounds(700,800,300,100);
 
-		car_insurance.setBounds(100,50,350,75);
-		member_name.setBounds(100,150,150,65);
-		gender.setBounds(100,250,150,65);
-		dob.setBounds(100,350,150,65);
-		age.setBounds(100,450,150,65);
-		phoneno.setBounds(100,550,150,65);
-
-		save.setBounds(100,650,150,65);
-		clear.setBounds(300,650,150,65);
-		back.setBounds(0,0,65,65);
+		save.setBounds(1300,300,300,100);
+		clear.setBounds(1300,700,300,100);
+		back.setBounds(50,50,300,100);
 
 		save.addActionListener(ml);
 		back.addActionListener(ml);

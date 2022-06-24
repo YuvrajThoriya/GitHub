@@ -81,7 +81,7 @@ public class Health extends JFrame
 
 		save.setBounds(1300,300,300,100);
 		clear.setBounds(1300,700,300,100);
-		back.setBounds(50,50,200,75);
+		back.setBounds(50,50,300,100);
 
 		save.addActionListener(ml);
 		back.addActionListener(ml);

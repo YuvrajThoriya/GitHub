@@ -103,7 +103,7 @@ public class MyActionListener1 implements ActionListener
 		}
 		
 		//For health insurances
-		if(e.getActionCommand().equals("GET PLANS   "))
+		if(e.getActionCommand().equals("   GET PLANS   "))
 		{
 			mf1 = new Health();
 			this.mf1.setVisible(true);
@@ -194,13 +194,13 @@ public class MyActionListener1 implements ActionListener
 			this.mf2_1.setVisible(true);
 			ls.setVisible(false);
 		}
-		if(e.getActionCommand().equals("get plans"))
+		if(e.getActionCommand().equals("  GET PLANS  "))
 		{
 			mf2 = new Home();
 			this.mf2.setVisible(true);
 			this.mf2_1.setVisible(false);
 		}
-		if(e.getActionCommand().equals("Save          "))
+		if(e.getActionCommand().equals("  SAVE  "))
 		{
 			String member_name = this.mf2.txt1.getText();
 			String dob = this.mf2.txt3.getText();
@@ -237,7 +237,7 @@ public class MyActionListener1 implements ActionListener
 		
 		
 		
-		if(e.getActionCommand().equals("Clear          "))
+		if(e.getActionCommand().equals("  CLEAR  "))
 		{
 			this.mf2.txt1.setText("");
 			this.mf2.txt3.setText("");
@@ -245,14 +245,14 @@ public class MyActionListener1 implements ActionListener
 			this.mf2.txt5.setText("");
 		}
 
-		if(e.getActionCommand().equals("<-"))
+		if(e.getActionCommand().equals("< HOME POLICY"))
 		{
 			mf2_1 = new home_policy();
 			this.mf2_1.setVisible(true);
 			this.mf2.setVisible(false);
 		}
 
-		if(e.getActionCommand().equals("go back"))
+		if(e.getActionCommand().equals("< List       "))
 		{
 			ls = new List();
 			this.mf2_1.setVisible(false);
@@ -267,13 +267,13 @@ public class MyActionListener1 implements ActionListener
 			this.mf3_1.setVisible(true);
 			ls.setVisible(false);
 		}
-		if(e.getActionCommand().equals("Get Plans"))
+		if(e.getActionCommand().equals(" GET PLANS "))
 		{
 			mf3 = new Car();
 			this.mf3.setVisible(true);
 			this.mf3_1.setVisible(false);
 		}
-		if(e.getActionCommand().equals("Save           "))
+		if(e.getActionCommand().equals(" SAVE "))
 		{
 			String member_name = this.mf3.txt1.getText();
 			String dob = this.mf3.txt3.getText();
@@ -309,7 +309,7 @@ public class MyActionListener1 implements ActionListener
 			
 		}
 		
-		if(e.getActionCommand().equals("Clear           "))
+		if(e.getActionCommand().equals(" CLEAR "))
 		{
 			this.mf3.txt1.setText("");
 			this.mf3.txt3.setText("");
@@ -317,14 +317,14 @@ public class MyActionListener1 implements ActionListener
 			this.mf3.txt5.setText("");
 		}
 
-		if(e.getActionCommand().equals("< Back"))
+		if(e.getActionCommand().equals("< CAR POLICY"))
 		{
 			mf3_1 = new car_policy();
 			this.mf3_1.setVisible(true);
 			this.mf3.setVisible(false);
 		}
 
-		if(e.getActionCommand().equals("Go Back"))
+		if(e.getActionCommand().equals("< List  "))
 		{
 			ls = new List();
 			this.mf3_1.setVisible(false);
@@ -339,13 +339,13 @@ public class MyActionListener1 implements ActionListener
 			this.mf4_1.setVisible(true);
 			ls.setVisible(false);
 		}
-		if(e.getActionCommand().equals("get Plans"))
+		if(e.getActionCommand().equals("    GET PLANS    "))
 		{
 			mf4 = new Family();
 			this.mf4.setVisible(true);
 			this.mf4_1.setVisible(false);
 		}
-		if(e.getActionCommand().equals("Save            "))
+		if(e.getActionCommand().equals("    SAVE    "))
 		{
 			String member_name = this.mf4.txt1.getText();
 			String dob = this.mf4.txt3.getText();
@@ -381,7 +381,7 @@ public class MyActionListener1 implements ActionListener
 			
 		}
 		
-		if(e.getActionCommand().equals("Clear            "))
+		if(e.getActionCommand().equals("    CLEAR    "))
 		{
 			this.mf2.txt1.setText("");
 			this.mf2.txt3.setText("");
@@ -389,14 +389,14 @@ public class MyActionListener1 implements ActionListener
 			this.mf2.txt5.setText("");
 		}
 
-		if(e.getActionCommand().equals("< back"))
+		if(e.getActionCommand().equals("< FAMILY POLICY"))
 		{
 			mf4_1 = new family_policy();
 			this.mf4_1.setVisible(true);
 			this.mf4.setVisible(false);
 		}
 
-		if(e.getActionCommand().equals("go Back"))
+		if(e.getActionCommand().equals("< List    "))
 		{
 			ls = new List();
 			this.mf4_1.setVisible(false);
